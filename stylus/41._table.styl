@@ -1,1 +1,36 @@
 // Tablas
+table
+	border 1px solid rosa_suave
+	border-collapse collapse
+	
+	caption, th, td
+		padding 0.25em 0.5em
+
+	caption, thead
+		background rosa_suave
+		color blanco
+		text-align center
+		text-transform uppercase
+		text-weight bolder
+	
+	caption
+		display table-caption
+		font-family fuente_heading_bold_italic
+		margin-bottom 1px
+	
+	tbody
+		tr
+			&:nth-child(even)
+			.nth-child-even
+				background gris_nube
+	
+	thead
+		font-family fuente_heading_bold
+		font-size 0.9em
+
+	tfoot
+		background rosa_suave
+		color gris_nube
+		font-family fuente_heading_bold_italic
+		font-size 0.9em
+	
