@@ -194,23 +194,29 @@
 }());
 
 
-// Activación del slider
+// El Slider
 $( document ).ready( function()
 {
+	// Activación del slider de la home de portfolio
 	$( "#owl-uno" ).owlCarousel({
 		autoPlay: true
 	});
-});
 
-$( document ).ready( function()
-{
+	// Slider de la home principal
 	$( "#owl-dos" ).owlCarousel({
 		autoPlay: true,
 		items: 1,
 		autoHeight : true,
 		singleItem : true
 	});
+
+	// Slider galería de una entrada
+	$( "#owl-galeria" ).owlCarousel({
+		autoPlay: true,
+		items: 3
+	});
 });
+
 
 // Soporte al placeholder
 $(document).ready(function()

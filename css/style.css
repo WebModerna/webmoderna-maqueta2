@@ -793,6 +793,11 @@ h6 {
     min-width: 150px;
   }
 }
+@media all and (min-width: 1230px) {
+  .entradas {
+    margin-left: 1px;
+  }
+}
 .categorizacion {
   border-top: 1px dashed #9c8f89;
   border-top: 1px dashed rgba(156,143,137,0.5);
@@ -950,6 +955,11 @@ h6 {
     float: left;
     margin: 0.25em 1em 1em 0;
     min-width: 400px;
+  }
+}
+@media all and (min-width: 1230px) {
+  .page {
+    padding-left: 0;
   }
 }
 .sidebar {
@@ -1209,11 +1219,12 @@ h6 {
 table {
   border: 1px solid #df1c4b;
   border-collapse: collapse;
+  overflow: hidden;
 }
 table caption,
 table th,
 table td {
-  padding: 0.25em 0.5em;
+  padding: 5px 0.5em;
 }
 table caption,
 table thead {
@@ -1224,9 +1235,9 @@ table thead {
   text-weight: bolder;
 }
 table caption {
-  display: table-caption;
   font-family: "MankSansMediumItalic", Helvetica, Verdana, sans-serif;
   margin-bottom: 1px;
+  width: auto;
 }
 table tbody tr:nth-child(even),
 table tbody tr .nth-child-even {
@@ -1439,7 +1450,10 @@ p {
   text-align: left;
 }
 button,
-.boton {
+input[type="submit"],
+input[type="reset"],
+.boton,
+.comment-reply-link {
   background: #f79641;
   border: none;
   border-radius: 4px;
@@ -1448,16 +1462,25 @@ button,
   cursor: pointer;
   display: inline-block;
   padding: 0.5em 1em;
+  text-decoration: none;
   vertical-align: middle;
 }
-button[type="submit"] {
+button[type="submit"],
+input[type="submit"] {
   background: #02a79e;
 }
 button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
 .boton:hover,
+.comment-reply-link:hover,
 button:focus,
-.boton:focus {
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+.boton:focus,
+.comment-reply-link:focus {
   background: #df1c4b;
+  color: #feffef;
 }
 .owl-carousel .owl-wrapper:after {
   content: ".";
@@ -2609,6 +2632,11 @@ button:focus,
     padding-right: 18px;
   }
 }
+@media all and (min-width: 1230px) {
+  .breadcrums__list {
+    padding-left: 0;
+  }
+}
 .post_pagination {
   font-family: "MankSansMediumItalic", Helvetica, Verdana, sans-serif;
 }
@@ -3129,5 +3157,19 @@ html.swipebox-html.swipebox-touch {
   100% {
     left: 0;
   }
+}
+.comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.comment-list li {
+  border: 1px solid #bdc3c7;
+  padding: 9px;
+}
+.comment-list li ul {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */
