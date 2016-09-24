@@ -16,3 +16,14 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+node_modules
+*.map
+demo-files
+*.zip
+Gentium_Basic
+swipebox-master
+owl-carousel-master
+jquery-placeholder-gh-pages
+swipebox.css
+normalize.css
+

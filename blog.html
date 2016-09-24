@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
+	<meta name="description" content="Diseño, desarrollo y programación web" />
+	<title>Blog | WebModerna, el futuro de la web</title>
+
+<!--[if lt IE 9]>
+	<script type="text/javascript">
+		document.createElement("nav");
+		document.createElement("header");
+		document.createElement("footer");
+		document.createElement("section");
+		document.createElement("article");
+		document.createElement("aside");
+		document.createElement("main");
+	</script>
+<![endif]-->
+
+<!--[if IE 8]>
+	<script type="text/javascript" src="js/html5-3.6-respond-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]><style type="text/css">.gradient { filter: none !important; }</style><![endif]-->
+
+	<link rel="stylesheet" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="heading">
+
+			<!-- Logotipo -->
+			<div class="heading__logo">
+				<figure class="heading__logo__figure">
+					<a href="index.html">
+						<img src="img/logo2.png" alt="Logotipo" />
+					</a>
+				</figure>
+			</div>
+
+			<!-- Botón del menú -->
+			<div class="heading__menu">
+				<a id="boton_menu" href="#" class="heading__menu_boton icon-menu icon-right icon-left"></a>
+			</div>
+
+
+			<!-- Barra de navegación -->
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__list__items"><a href="index.html">Home</a></li>
+					<li class="nav__list__items"><a href="page.html">Servicios</a></li>
+					<li class="nav__list__items"><a href="page.html">Nosotros</a></li>
+					<li class="nav__list__items"><a href="blog.html">Portfolio</a></li>
+					<li class="nav__list__items current_menu_item current-page-item"><a href="blog.html">Blog</a></li>
+					<li class="nav__list__items"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+
+		<!-- el titular principal solo en la home -->
+			<h2 class="heading__title">
+				Diseño, desarrollo y programación web
+			</h2>
+		</header>
+
+		<div class="separador"></div>
+
+		<!-- Todo la parte central -->
+		<div class="content">
+			<main>
+				<!-- Las miguillas de pan -->
+				<div class="breadcrums">
+					<ul class="breadcrums__list">
+						<li class="breadcrums__list__item">Tu estás aquí: </li>
+						<li class="breadcrums__list__item">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li class="breadcrums__list__item">Blog, Categorías, Tags, Search</li>
+					</ul>
+				</div>
+				
+
+				<!-- El listado de los posts -->
+				<section class="entradas">
+					<header class="entradas__header">
+						<h1 class="entradas__header__title">Categoría o Tag: "Noticias"</h1>
+					</header>
+
+					<article class="entradas__article">
+						<figure class="entradas__article__figure">
+							<a href="single.html"><img src="img/client.jpg" alt="single" /></a>
+						</figure>
+						<div class="entradas__article__right">
+							<header class="entradas__article__header">
+								<h2 class="entradas__article__header__title">
+									<a href="single.html">Es un titular de ejemplo</a>
+								</h2>
+							</header>
+							<div class="entradas__article__content">
+								
+								<!-- Las Categorías -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-folder-open icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">profesional</a></li>
+											<li><a href="blog.html">oteles</a></li>
+											<li><a href="blog.html">abañas</a></li>
+											<li><a href="blog.html">oticias</a></li>
+											<li><a href="blog.html">Tecnología</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Las Etiquetas -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-price-tag icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">Tag 1</a></li>
+											<li><a href="blog.html">Tag 2</a></li>
+											<li><a href="blog.html">Tag 3</a></li>
+											<li><a href="blog.html">Tag 4</a></li>
+											<li><a href="blog.html">Tag 5</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- La fecha de publicación -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-calendar icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<span>12/03/2016</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="entradas__article">
+						<figure class="entradas__article__figure">
+							<a href="single.html"><img src="img/client.jpg" alt="single" /></a>
+						</figure>
+						<div class="entradas__article__right">
+							<header class="entradas__article__header">
+								<h2 class="entradas__article__header__title">
+									<a href="single.html">Es un titular de ejemplo</a>
+								</h2>
+							</header>
+							<div class="entradas__article__content">
+								
+								<!-- Las Categorías -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-folder-open icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">Profesional</a></li>
+											<li><a href="blog.html">Hoteles</a></li>
+											<li><a href="blog.html">Cabañas</a></li>
+											<li><a href="blog.html">Noticias</a></li>
+											<li><a href="blog.html">Tecnología</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Las Etiquetas -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-price-tag icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">Tag 1</a></li>
+											<li><a href="blog.html">Tag 2</a></li>
+											<li><a href="blog.html">Tag 3</a></li>
+											<li><a href="blog.html">Tag 4</a></li>
+											<li><a href="blog.html">Tag 5</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- La fecha de publicación -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-calendar icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<span>12/03/2016</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+
+					<article class="entradas__article">
+						<figure class="entradas__article__figure">
+							<a href="single.html"><img src="img/client.jpg" alt="single" /></a>
+						</figure>
+						<div class="entradas__article__right">
+							<header class="entradas__article__header">
+								<h2 class="entradas__article__header__title">
+									<a href="single.html">Es un titular de ejemplo</a>
+								</h2>
+							</header>
+							<div class="entradas__article__content">
+								
+								<!-- Las Categorías -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-folder-open icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">Profesional</a></li>
+											<li><a href="blog.html">Hoteles</a></li>
+											<li><a href="blog.html">Cabañas</a></li>
+											<li><a href="blog.html">Noticias</a></li>
+											<li><a href="blog.html">Tecnología</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Las Etiquetas -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-price-tag icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<ul class="categorizacion__list__items">
+											<li><a href="blog.html">Tag 1</a></li>
+											<li><a href="blog.html">Tag 2</a></li>
+											<li><a href="blog.html">Tag 3</a></li>
+											<li><a href="blog.html">Tag 4</a></li>
+											<li><a href="blog.html">Tag 5</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- La fecha de publicación -->
+								<div class="categorizacion">
+									<div class="categorizacion__icono">
+										<span class="icon-calendar icon-left icon-right"></span>
+									</div>
+									<div class="categorizacion__list">
+										<span>12/03/2016</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- La paginación -->
+					<div class="paginacion">
+						<span class="paginacion__item">Página 23 de 423</span>
+						<a class="paginacion__item paginacion__first" href="#" title="Primero"></a>
+						<a class="paginacion__item paginacion__back" href="#" "Atrás"></a>
+						<a class="paginacion__item" href="#">4</a>
+						<span class="paginacion__item paginacion__current">5</span>
+						<a class="paginacion__item" href="#">6</a>
+						<a class="paginacion__item" href="#">7</a>
+						<a class="paginacion__item paginacion__next" href="#" title="Siguiente"></a>
+						<a class="paginacion__item paginacion__last" href="#" title="Último"></a>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- La barra Lateral -->
+		<div class="sidebar">
+			<aside>
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Buscar
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<form action="#">
+							<div class="search">
+								<input type="search" placeholder="Chusmear..." />
+								<button type="submit"><span class="icon-search"></span></button>
+								<div class="clearboth"></div>
+							</div>
+						</form>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<ul>
+							<li>Contenido Capilla</li>
+							<li>Contenido Capilla</li>
+							<li><a href="">Contenido Capilla</a></li>
+							<li><a href="">Contenido Capilla</a></li>
+							<li><a href="">Contenido Capilla</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Contáctenos
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<address>
+							<ul>
+								<li>Calle</li>
+								<li>Número</li>
+								<li>Ciudad</li>
+								<li>País</li>
+								<li>Teléfono</li>
+							</ul>
+						</address>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti possimus deserunt sapiente expedita et, porro iusto laudantium animi suscipit modi, dolorum, quidem! Quibusdam nostrum minima, molestias nulla dolorem quia eveniet.</p>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<div class="sidebar__section__article">
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+					</div>
+				</section>
+			</aside>
+		</div>
+
+		<div class="separador"></div>
+		
+		<!-- El footer de la página -->
+		<footer class="footer">
+			<!-- Redes sociales -->
+			<div class="footer__redes_sociales">
+				<ul class="footer__redes_sociales__list">
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Facebook" class="icon-facebook"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Twitter" class="icon-twitter"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Google+" class="icon-google-plus"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="LinkedIn" class="icon-rss"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="GitHub" class="icon-github"></a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Derechos de copia -->
+			<div class="footer__copyright">
+				<p>&copy; WebModerna 2016 | Todos los derechos reservados</p>
+			</div>
+
+			<!-- Ir hacia arriba -->
+			<div id="ir_arriba" class="gotop">
+				<a href="#" title="Ir hacia arriba"></a>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/scripts.min.js"></script>
+</body>
+</html>

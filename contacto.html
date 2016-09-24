@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
+	<meta name="description" content="Page: Diseño, desarrollo y programación web" />
+	<title>Contacto | WebModerna, el futuro de la web</title>
+
+<!--[if lt IE 9]>
+	<script type="text/javascript">
+		document.createElement("nav");
+		document.createElement("header");
+		document.createElement("footer");
+		document.createElement("section");
+		document.createElement("article");
+		document.createElement("aside");
+		document.createElement("main");
+	</script>
+<![endif]-->
+
+<!--[if IE 8]>
+	<script type="text/javascript" src="js/html5-3.6-respond-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]><style type="text/css">.gradient { filter: none !important; }</style><![endif]-->
+
+	<link rel="stylesheet" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="heading">
+
+			<!-- Logotipo -->
+			<div class="heading__logo">
+				<figure class="heading__logo__figure">
+					<a href="index.html">
+						<img src="img/logo2.png" alt="Logotipo" />
+					</a>
+				</figure>
+			</div>
+
+			<!-- Botón del menú -->
+			<div class="heading__menu">
+				<a id="boton_menu" href="#" class="heading__menu_boton icon-menu icon-right icon-left"></a>
+			</div>
+
+
+			<!-- Barra de navegación -->
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__list__items"><a href="index.html">Home</a></li>
+					<li class="nav__list__items"><a href="page.html">Servicios</a></li>
+					<li class="nav__list__items"><a href="page.html">Nosotros</a></li>
+					<li class="nav__list__items"><a href="blog.html">Portfolio</a></li>
+					<li class="nav__list__items"><a href="blog.html">Blog</a></li>
+					<li class="nav__list__items current_menu_item current-page-item"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+
+		<!-- el titular principal solo en la home -->
+			<h2 class="heading__title">
+				Contacto
+			</h2>
+		</header>
+
+		<div class="separador"></div>
+
+		<!-- Todo la parte central -->
+		<div class="content">
+			<main>
+				<!-- Las miguillas de pan -->
+				<div class="breadcrums">
+					<ul class="breadcrums__list">
+						<li class="breadcrums__list__item">Tu estás aquí: </li>
+						<li class="breadcrums__list__item">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li class="breadcrums__list__item"><a href="#">Página</a></li>
+						<li class="breadcrums__list__item"><a href="#">Subpágina</a></li>
+						<li class="breadcrums__list__item">Contacto</li>
+					</ul>
+				</div>
+				
+
+				<!-- La Página en si -->
+				<section class="page">
+					<article class="page__article">
+						<header class="page__article__header">
+							<h1 class="page__article__header__title">
+								Contacto
+							</h1>
+						</header>
+						<div class="page__article__content">
+							<h3>Completar todos los campos</h3>
+							<form action="post">
+								<div class="respuesta"></div>
+								<input type="text" name="apellidoynombre" id="apellidoynombre" placeholder="Apellido y Nombre" />
+
+								<div class="respuesta"></div>
+								<input type="email" name="correo" id="correo" placeholder="E-Mail" />
+
+								<div class="respuesta"></div>
+								<input type="tel" name="telefono" id="telefono" placeholder="Teléfono" />
+
+								<div class="respuesta"></div>
+								<textarea name="mensaje" id="mensaje" placeholder="Escribir aquí..."></textarea>
+
+								<div class="verificacion">
+									<h4>Escribe el código de la imagen</h4>
+									<div class="respuesta"></div>
+
+									<img id="siimage" class="captcha--imagen" src="/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_show.php?sid=358a297ce08f7cb69a2ff8bd52a7d63c" alt="CAPTCHA Image" />
+									<object class="pointer" type="application/x-shockwave-flash" data="/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_play.swf?bgcol=#ffffff&amp;icon_file=/55._emyth/wp-content/themes/emyth/includes/securimage/images/audio_icon.png&amp;audio_file=/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_play.php">
+										<param class="pointer" name="movie" value="/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_play.swf?bgcol=#ffffff&amp;icon_file=/55._emyth/wp-content/themes/emyth/includes/securimage/images/audio_icon.png&amp;audio_file=/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_play.php" />
+									</object>
+									<a class="recargar__imagen" href="#" title="Recargar imagen" onclick="document.getElementById('siimage').src = '/55._emyth/wp-content/themes/emyth/includes/securimage/securimage_show.php?sid=' + Math.random(); this.blur(); return false">
+										<img src="/55._emyth/wp-content/themes/emyth/includes/securimage/images/refresh.png" alt="Recargar imagen" height="32" width="32" onclick="this.blur()" />
+									</a>
+
+									<input class="captcha__input" type="text" id="ct_captcha" name="ct_captcha"  placeholder="abc12" maxlength="8" />
+								</div>
+
+								<div class="alineacion__derecha">
+									<button type="submit">
+										<span class="icon-checkmark icon-right"></span>
+										Enviar
+									</button>
+									<button type="reset">
+										<span class="icon-cross icon-right"></span>
+										Limpiar
+									</button>
+								</div>
+							</form>
+						</div>
+					</article>
+				</section>
+			</main>
+		</div>
+
+		<!-- La barra Lateral -->
+		<div class="sidebar">
+			<aside>
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Buscar
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<form action="#">
+							<div class="search">
+								<input type="search" placeholder="Chusmear..." />
+								<button type="submit"><span class="icon-search"></span></button>
+								<div class="clearboth"></div>
+							</div>
+						</form>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<ul>
+							<li>Contenido Capilla</li>
+							<li>Contenido Capilla</li>
+							<li><a href="">Contenido Capilla</a></li>
+							<li><a href="">Contenido Capilla</a></li>
+							<li><a href="">Contenido Capilla</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Contáctenos
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<address>
+							<ul>
+								<li>Calle</li>
+								<li>Número</li>
+								<li>Ciudad</li>
+								<li>País</li>
+								<li>Teléfono</li>
+							</ul>
+						</address>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<article class="sidebar__section__article">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti possimus deserunt sapiente expedita et, porro iusto laudantium animi suscipit modi, dolorum, quidem! Quibusdam nostrum minima, molestias nulla dolorem quia eveniet.</p>
+					</article>
+				</section>
+
+				<section class="sidebar__section">
+					<header class="sidebar__section__header">
+						<h3 class="sidebar__section__header__title">
+							Titular a modo de ejemplo
+						</h3>
+					</header>
+					<div class="sidebar__section__article">
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+						<article class="sidebar__section__article__post">
+							<div class="sidebar__section__article__content-left">
+								<figure class="sidebar__section__article__figure">
+									<a href="#">
+										<img src="img/client.jpg" alt="imagen" />
+									</a>
+								</figure>
+							</div>
+							<div class="sidebar__section__article__content-right">
+								<h4 class="sidebar__section_article__subtitle"><a href="#">Lorem ipsum dolor sit amet</a></h4>
+							</div>
+						</article>
+					</div>
+				</section>
+			</aside>
+		</div>
+
+		<div class="separador"></div>
+		
+		<!-- El footer de la página -->
+		<footer class="footer">
+			<!-- Redes sociales -->
+			<div class="footer__redes_sociales">
+				<ul class="footer__redes_sociales__list">
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Facebook" class="icon-facebook"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Twitter" class="icon-twitter"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="Google+" class="icon-google-plus"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="LinkedIn" class="icon-rss"></a>
+					</li>
+					<li class="footer__redes_sociales__list__item">
+						<a href="#" title="GitHub" class="icon-github"></a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Derechos de copia -->
+			<div class="footer__copyright">
+				<p>&copy; WebModerna 2016 | Todos los derechos reservados</p>
+			</div>
+
+			<!-- Ir hacia arriba -->
+			<div id="ir_arriba" class="gotop">
+				<a href="#" title="Ir hacia arriba"></a>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/scripts.min.js"></script>
+</body>
+</html>
